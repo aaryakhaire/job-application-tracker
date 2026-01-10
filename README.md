@@ -97,6 +97,8 @@ http://127.0.0.1:5000
 
 ## 📸 Screenshots
 
+<img width="959" height="436" alt="image" src="https://github.com/user-attachments/assets/3634a094-f84c-447e-873a-b226131b97a8" />
+
 
 
 
