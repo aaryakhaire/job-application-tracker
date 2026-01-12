@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: #020617;
+    color: #e5e7eb;
+}
+
+.bg-animation {
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(255,115,0,0.25), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(59,130,246,0.25), transparent 45%),
+        linear-gradient(#020617, #020617);
+    z-index: -1;
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 32px;
+    background: rgba(15,23,42,0.65);
+    backdrop-filter: blur(18px);
+    border-radius: 20px;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+}
+
+.card {
+    padding: 18px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.08);
+}
+
+.card span {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.card.applied { border-left: 4px solid #3b82f6; }
+.card.interview { border-left: 4px solid #f59e0b; }
+.card.offer { border-left: 4px solid #22c55e; }
+.card.rejected { border-left: 4px solid #ef4444; }
+
+.form {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form input,
+.form select {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255,255,255,0.1);
+    color: white;
+}
+
+.form button {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-weight: bold;
+}
+
+.filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+thead th {
+    color: #9ca3af;
+    padding: 10px 14px;
+    text-align: left;
+}
+
+tbody tr {
+    background: rgba(255,255,255,0.06);
+}
+
+tbody td {
+    padding: 14px;
+}
+
+.badge {
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.Applied { background: #3b82f6; }
+.Interview { background: #f59e0b; }
+.Offer { background: #22c55e; }
+.Rejected { background: #ef4444; }
+
+.delete-btn {
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: none;
+    background: #ef4444;
+    color: white;
+}
