@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Application Tracker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="bg-animation"></div>
+
+<div class="app-container">
+
+    <h1>Job Application Tracker</h1>
+
+    <div class="dashboard">
+        <div class="card applied">Applied <span id="appliedCount">0</span></div>
+        <div class="card interview">Interview <span id="interviewCount">0</span></div>
+        <div class="card offer">Offer <span id="offerCount">0</span></div>
+        <div class="card rejected">Rejected <span id="rejectedCount">0</span></div>
+    </div>
+
+    <div class="form">
+        <input id="company" placeholder="Company Name">
+        <input id="role" placeholder="Job Role">
+
+        <select id="status">
+            <option>Applied</option>
+            <option>Interview</option>
+            <option>Offer</option>
+            <option>Rejected</option>
+        </select>
+
+        <input type="date" id="date">
+        <button onclick="addApplication()">Add</button>
+    </div>
+
+    <div class="filter">
+        <select id="filter" onchange="loadApps()">
+            <option>All</option>
+            <option>Applied</option>
+            <option>Interview</option>
+            <option>Offer</option>
+            <option>Rejected</option>
+        </select>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Role</th>
+                <th>Status</th>
+                <th>Date Applied</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+    </table>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
